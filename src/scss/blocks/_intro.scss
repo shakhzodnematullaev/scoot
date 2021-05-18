@@ -1,0 +1,198 @@
+.intro {
+    background: url(/img/intro.jpg) no-repeat center center;
+    background-repeat: no-repeat;
+    margin-top: 96px;
+
+    
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+      
+      .intro {
+          background: url(/img/intro@2x.jpg) no-repeat center center;
+      }
+    
+    }
+}
+
+.intro__container {
+    // display: flex;
+    align-items: center;
+    padding-top: 153px;
+    padding-bottom: 152px;
+}
+
+.intro__title {
+    font-size: 56px;
+    line-height: 56px;
+    color: white;
+    font-family: 'Space Mono';
+    width: 500px;
+    padding: 0;
+    margin: 0;
+    letter-spacing: -2.5px;
+    margin-bottom: 40px;
+}
+
+.intro__box {
+    max-width: 405px;
+    margin: 0 auto;
+    margin-left: 95px;
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 202.5px;
+        height: 15px;
+        background: url(/img/line_2.png) no-repeat center center;
+        position: absolute;
+        left: -260px;
+        top: 39px;
+    }
+
+    &::after {
+        content: '';
+        width: 452px;
+        height: 151px;
+        background: url(/img/line.png) no-repeat center center;
+        position: absolute;
+        top: 39px;
+        right: calc(-100% - 80px);
+    }
+}
+
+.intro__text {
+    color: white;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 40px;
+}
+
+.intro__link {
+    display: inline-block;
+    margin-left: auto;
+    font-family: 'Space Mono';
+    font-size: 15px;
+    line-height: 25px;
+    color: white;
+    padding: 14px 39px;
+    background-color: #FCB72B;
+    border: none;
+
+    &:hover {
+        color: #FCB72B;
+        background-color: transparent;
+        border: 3px solid #FCB72B;
+        padding: 11px 36px;
+    }
+}
+
+@media screen and (max-width:1140px) {
+    .intro__container {
+        max-width: 689px;
+        display: block;
+        text-align: center;
+        padding-bottom: 217px;
+    }
+
+    .intro {
+        background: url(/img/intro_tablet.jpg) no-repeat center center;
+        background-size: contain;
+    }
+
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+    
+        .intro {
+            background-image: url(/img/intro_tablet@2x.jpg);
+        }
+}
+
+    .intro__box {
+        max-width: 573px;
+        margin: 0 auto;
+
+        &::before {
+            display: none;
+        }
+
+        &::after {
+            top: 210px;
+            right: calc(100% - 120px);
+        }
+    }
+
+    .intro__title {
+        margin: 0;
+        font-size: 56px;
+        line-height: 56px;
+        max-width: 573px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .intro__text {
+        display: block;
+        margin: 0;
+        font-size: 15px;
+        line-height: 25px;
+        max-width: 573px;
+        margin: 0 auto;
+        margin-top: 24px;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:689px) {
+    .intro__container {
+        max-width: 375px;
+        display: block;
+        text-align: center;
+        padding-bottom: 179px;
+        padding-top: 115px;
+    }
+
+    .intro {
+        background: url(/img/intro_mobile.png) no-repeat center center;
+        background-size: cover;
+        margin-top: 73px;
+    }
+
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+    
+        .intro {
+            background-image: url(/img/intro_mobile@2x.png);
+        }
+}
+
+    .intro__title {
+        margin: 0 auto;
+        font-size: 40px;
+        line-height: 40px;
+        max-width: 311px;
+        letter-spacing: -1.79px;
+    }
+
+    .intro__text {
+        max-width: 311px;
+        margin: 0 auto;
+        margin-top: 24px;
+        margin-bottom: 34px;
+    }
+}

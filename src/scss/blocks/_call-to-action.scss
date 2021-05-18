@@ -1,0 +1,83 @@
+.call-to-action {
+    background-color: #495567;
+    position: relative;
+
+    &::after {
+        content: '';
+        width: 998px;
+        height: 158px;
+        background: url(/img/circle.png) no-repeat center center;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+.call-to-action__container {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding-top: 102px;
+    padding-bottom: 102px;
+}
+
+.action__title {
+    width: 415px;
+    font-size: 48px;
+    line-height: 48px;
+    color: white;
+    letter-spacing: -2.14px;
+    font-family: 'Space Mono';
+    padding: 0;
+    margin: 0;
+}
+
+.action__box {
+    margin-left: auto;
+}
+
+.appstore {
+    margin-right: 18px;
+}
+
+@media screen and (max-width:1140px) {
+    .call-to-action__container {
+        max-width: 689px;
+        flex-direction: column;
+    }
+
+    .action__box {
+        margin: 0 auto;
+    }
+
+    .action__title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width:689px) {
+    .call-to-action__container {
+        max-width: 375px;
+    }
+
+    .action__title {
+        font-size: 32px;
+        line-height: 32px;
+        max-width: 311px;
+        margin-bottom: 40px;
+    }
+
+    .action__box {
+        margin: 0 auto;
+    }
+
+    .appstore {
+        width: 113px;
+        margin-right: 13px;
+    }
+
+    .googleplay {
+        width: 130px;
+    }
+}

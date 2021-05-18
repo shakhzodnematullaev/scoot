@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lexend Deca', Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (max-width:1140px) {
+    body {
+        overflow-x: hidden;
+    }
+}
+
+@media screen and (max-width:689px) {
+    body {
+        overflow-x: hidden;
+    }
+}

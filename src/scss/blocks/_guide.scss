@@ -1,0 +1,196 @@
+.guide__container {
+    margin: 0 auto;
+    padding-top: 296px;
+    padding-bottom: 200px;
+}
+
+.guide__list {
+    @include reset-list;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 971px;
+        height: 15px;
+        background-color: #D8D8D8;
+        position: absolute;
+        top: -96px;
+        left: -165px;
+    }
+}
+
+.guide__item {
+    margin-right: 30px;
+    position: relative;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.guide__title {
+    font-size: 24px;
+    line-height: 28px;
+    color: #495567;
+    font-family: 'Space Mono';
+    letter-spacing: -1.07px;
+}
+
+.guide__text {
+    max-width: 350px;
+    color: #939CAA;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.app::before {
+    content: '';
+    width: 96px;
+    height: 96px;
+    background: #FCB72B url(/img/app.png) no-repeat center center;
+    position: absolute;
+    border-radius: 50%;
+    top: -136px;
+    left: 0;
+}
+
+.scooter::before {
+    content: '';
+    width: 96px;
+    height: 96px;
+    background: #FCB72B url(/img/scooter.png) no-repeat center center;
+    position: absolute;
+    border-radius: 50%;
+    top: -136px;
+    left: 0;
+}
+
+.ride::before {
+    content: '';
+    width: 96px;
+    height: 96px;
+    background: #FCB72B url(/img/ride.png) no-repeat center center;
+    position: absolute;
+    border-radius: 50%;
+    top: -136px;
+    left: 0;
+}
+
+@media screen and (max-width:1140px) {
+    .guide__container {
+        max-width: 689px;
+        padding-top: 122px;
+    }
+
+    .guide__list {
+        @include reset-list;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    
+        &::before {
+            content: '';
+            width: 512px;
+            height: 15px;
+            background-color: #D8D8D8;
+            position: absolute;
+            transform: rotate(-90deg);
+            top: 127px;
+            left: -170px;
+        }
+    }
+
+    .guide__item {
+        max-width: 573px;
+        position: relative;
+        margin-right: 0;
+        margin-bottom: 40px;
+        margin-left: 140px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    
+    .guide__title {
+        margin-top: 0;
+        margin-bottom: 27px;
+    }
+
+    .guide__text {
+        max-width: 398px;
+        margin: 0;
+    }
+
+    .app::before {
+        top: 0;
+        left: -165px;
+    }
+    
+    .scooter::before {
+        top: 0;
+        left: -165px;
+    }
+    
+    .ride::before {
+        top: 0;
+        left: -165px;
+    }
+}
+
+@media screen and (max-width:689px) {
+    .guide__container {
+        max-width: 375px;
+        padding-top: 200px;
+    }
+
+    .guide__list {
+        @include reset-list;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    
+        &::before {
+            display: none;
+        }
+    }
+
+    .guide__item {
+        text-align: center;
+        max-width: 375px;
+        margin: 0;
+        margin-bottom: 128px;
+    }
+
+    .app::before {
+        width: 56px;
+        height: 56px;
+        background: #FCB72B url(/img/app_2.png) no-repeat center center;
+        border-radius: 50%;
+        top: -80px;
+        left: 140px;
+    }
+    
+    .scooter::before {
+        width: 56px;
+        height: 56px;
+        background: #FCB72B url(/img/scooter_2.png) no-repeat center center;
+        border-radius: 50%;
+        top: -80px;
+        left: 140px;
+    }
+    
+    .ride::before {
+        width: 56px;
+        height: 56px;
+        background: #FCB72B url(/img/ride_2.png) no-repeat center center;
+        border-radius: 50%;
+        top: -80px;
+        left: 140px;
+    }
+
+}
