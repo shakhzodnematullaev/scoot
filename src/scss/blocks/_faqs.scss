@@ -1,0 +1,109 @@
+.faqs__container {
+    margin: 0 auto;
+}
+
+.faqs__title {
+    display: block;
+    text-align: center;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14px;
+    font-family: 'Space Mono';
+    color: rgba(73, 85, 103, 1);
+}
+
+.faqs__list {
+    @include reset-list;
+    padding: 0;
+    margin: 0;
+}
+
+.faqs__sub-list {
+    @include reset-list;
+    padding: 0;
+    margin: 0;
+}
+
+.faqs__item {
+    display: flex;
+    margin-bottom: 64px;
+}
+
+.faqs__item-title {
+    max-width: 350px;
+    // margin-right: 30px;
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -1.79px;
+    font-family: 'Space Mono';
+    color: rgba(73, 85, 103, 1);
+}
+
+.sub-item__title {
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07px;
+    font-family: 'Space Mono';
+    color: rgba(73, 85, 103, 1);
+}
+
+.faqs__sub-list {
+    width: 730px;
+    margin-left: auto;
+}
+
+.faqs__sub-item {
+    width: 730px;
+    background-color: rgba(242, 245, 249, 1);
+    padding: 32px 40px;
+    margin-bottom: 16px;
+    position: relative;
+
+    &:nth-child(3n) {
+        margin-bottom: 0;
+    }
+    
+    &::before {
+        content: '';
+        width: 18px;
+        height: 13px;
+        background: url(/img/strelka.png) no-repeat center center;
+        position: absolute;
+        right: 40px;
+        top: 42px;
+    }
+}
+
+.sub-item__button {
+    width: 100%;
+    display: block;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07px;
+    font-family: 'Space Mono';
+    color: rgba(73, 85, 103, 1);
+    background-color: transparent;
+    border: none;
+}
+
+.sub-item__text {
+    display: none;
+}
+
+.sub-item__text--active {
+    display: block;
+    margin: 0;
+    margin-top: 24px;
+}   
+
+.faqs__sub-item--active::before {
+    transform: rotate(180deg);
+}
