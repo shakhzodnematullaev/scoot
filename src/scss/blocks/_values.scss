@@ -82,3 +82,21 @@
     line-height: 25px;
     color: rgba(147, 156, 170, 1);
 }
+
+@media screen and (max-width:1140px) {
+    .values__container {
+        max-width: 689px;
+        display: block;
+        align-items: center;
+    }
+
+    .values__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .values__item {
+        margin-right: 0;
+    }
+    
+}
