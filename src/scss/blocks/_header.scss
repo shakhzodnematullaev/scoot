@@ -85,12 +85,12 @@
         display: none;
         flex-direction: column;
         background:rgba(0, 0, 0, 0.74);
-        height: calc(100vh - 73px);
+        height: calc(100vh - 64px);
         position: absolute;
         width: 100%;
         padding: 0;
         left: 0;
-        top: 73px;
+        top: 64px;
         z-index: 2;
 
         &::before {

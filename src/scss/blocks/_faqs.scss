@@ -110,12 +110,65 @@
 
 @media screen and (max-width:1140px) {
     .faqs__container {
-        max-width: 689px;
+        max-width: 719px;
         display: block;
         align-items: center;
     }
 
     .faqs__item {
         flex-direction: column;
+    }
+
+    .faqs__item-title {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    .faqs__title {
+        margin-bottom: 64px;
+    }
+
+    .faqs__sub-list {
+        width: 100%;
+    }
+
+    .faqs__sub-item {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:689px) {
+    .faqs__container {
+        max-width: 341px;
+        display: block;
+        align-items: center;
+    }
+
+    .faqs__title {
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: -1.43px;
+        margin-bottom: 48px;
+    }
+
+    .faqs__item-title {
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -1.07px;
+    }
+
+    .sub-item__title {
+        width: 210px;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: -0.8px;
+    }
+
+    .sub-item__button {        
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: -0.8px;
     }
 }

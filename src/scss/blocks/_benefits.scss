@@ -40,7 +40,7 @@
 }
 
 .benefits__box {
-    width: 445px;
+    max-width: 445px;
 }
 
 .benefits__title {
@@ -148,7 +148,7 @@
 
 @media screen and (max-width:1140px) {
     .benefits__container {
-        max-width: 689px;
+        max-width: 719px;
         overflow-x: hidden;
         margin-bottom: 120px;
     }
@@ -189,34 +189,38 @@
         margin-bottom: 40px;
     }
 
-    
-.telemetry::before {
-    top: 300px;
-    right: -50px;
-    z-index: 2;
-}
+    .benefits__text {
+        max-width: 573px;
+    }
 
-.payment::before {
-    top: 80px;
-    right: -440px;
-    z-index: 2;
-}
+        
+    .telemetry::before {
+        top: 300px;
+        right: -50px;
+        z-index: 2;
+    }
 
-.city::before {
-    top: 0;
-    left: -450px;
-    z-index: 2;
-}
+    .payment::before {
+        top: 80px;
+        right: -440px;
+        z-index: 2;
+    }
 
-.mobility::before {
-    top: 260px;
-    right: -55px;
-}
+    .city::before {
+        top: 0;
+        left: -450px;
+        z-index: 2;
+    }
 
-.urban::before {
-    top: 0;
-    left: -445px;
-}
+    .mobility::before {
+        top: 260px;
+        right: -55px;
+    }
+
+    .urban::before {
+        top: 0;
+        left: -445px;
+    }
 }
 
 @media screen and (max-width:689px) {
@@ -264,5 +268,20 @@
         top: 0;
         left: -450px;
         z-index: 2;
+    }
+
+    .benefits__img {
+        width: 311px;
+        height: 311px;
+    }
+
+    .mobility::before {
+        top: 130px;
+        right: -405px;
+    }
+
+    .urban::before {
+        top: 0;
+        left: -400px;
     }
 }
