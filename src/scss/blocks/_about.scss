@@ -27,10 +27,10 @@
 
   &::before {
     content: '';
-    width: 234px;
+    width: 203px;
     height: 63px;
     background: url(/img/about_before.png) no-repeat center center;
-    right: -167px;
+    right: -150px;
     top: 68px;
     position: absolute;
   }
@@ -80,7 +80,7 @@
   }
 
   .about__container::before {
-    margin-right: 110px;
+    right: -25px;
   }
 }
 
