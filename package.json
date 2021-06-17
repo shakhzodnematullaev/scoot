@@ -1,5 +1,5 @@
 {
-  "name": "23-dars",
+  "name": "scoot",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -7,7 +7,7 @@
     "build": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Shakhzod",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.14",
@@ -28,5 +28,13 @@
     "imagemin-svgo": "^9.0.0",
     "posthtml-include": "^1.7.0"
   },
-  "description": ""
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shakhzodnematullaev/scoot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shakhzodnematullaev/scoot/issues"
+  },
+  "homepage": "https://github.com/shakhzodnematullaev/scoot#readme"
 }
